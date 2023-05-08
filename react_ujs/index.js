@@ -1,13 +1,13 @@
-var React = require("react")
-var ReactDOM = require("react-dom")
-var ReactDOMServer = require("react-dom/server")
+import React from "react"
+import ReactDOM from "react-dom"
+import ReactDOMServer from "react-dom/server"
 
-var detectEvents = require("./src/events/detect")
-var constructorFromGlobal = require("./src/getConstructor/fromGlobal")
-var constructorFromRequireContext = require("./src/getConstructor/fromRequireContext")
-var constructorFromRequireContextWithGlobalFallback = require("./src/getConstructor/fromRequireContextWithGlobalFallback")
-var constructorFromRequireContextsWithGlobalFallback = require("./src/getConstructor/fromRequireContextsWithGlobalFallback")
-const { supportsHydration, reactHydrate, createReactRootLike } = require("./src/renderHelpers")
+import detectEvents from "./src/events/detect"
+import constructorFromGlobal from "./src/getConstructor/fromGlobal"
+import constructorFromRequireContext from "./src/getConstructor/fromRequireContext"
+import constructorFromRequireContextWithGlobalFallback from "./src/getConstructor/fromRequireContextWithGlobalFallback"
+import constructorFromRequireContextsWithGlobalFallback from "./src/getConstructor/fromRequireContextsWithGlobalFallback"
+import {supportsHydration, reactHydrate, createReactRootLike } from "./src/renderHelpers"
 
 var ReactRailsUJS = {
   // This attribute holds the name of component which should be mounted
