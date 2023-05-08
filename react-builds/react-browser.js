@@ -1,7 +1,7 @@
-var React = require("react");
-var ReactDOM = require("react-dom");
-var createReactClass = require("create-react-class");
-var PropTypes = require("prop-types");
+import React from "react";
+import ReactDOM from "react-dom";
+import createReactClass from "create-react-class";
+import PropTypes from "prop-types";
 
 window.React = React;
 window.ReactDOM = ReactDOM;
